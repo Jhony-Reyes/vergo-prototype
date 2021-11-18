@@ -1,0 +1,58 @@
+{
+    "extends": [
+      "airbnb",
+      "airbnb/hooks",
+      "plugin:@typescript-eslint/recommended",
+      "prettier",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": ["@typescript-eslint", "react", "prettier", "react-native"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "project": "./tsconfig.json"
+    },
+    "rules": {
+      "import/no-unresolved": 0,
+      "react/jsx-filename-extension": [1, {
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ]
+      }],
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "trailingComma": "all",
+          "arrowParens": "avoid",
+          "endOfLine": "auto"
+        }
+      ],
+      "import/extensions": ["error", {"js": "never", "ts": "never", "jsx": "never", "json": "always"}],
+      "react/prop-types": 0,
+      "no-shadow": "off",
+      "@typescript-eslint/no-shadow": ["error"],
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "error",
+      "react-native/no-unused-styles": 2,
+      "react-native/no-inline-styles": 2,
+      "no-undef": "error",
+      "react/function-component-definition": 0,
+      "no-use-before-define": 0,
+      "@typescript-eslint/no-namespace": "off",
+      "@typescript-eslint/no-empty-interface": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "react/require-default-props": 0,
+      "react/no-unused-prop-types": 0,
+      "no-unused-expressions": "off",
+      "react/style-prop-object": 0,
+      "default-param-last": "off",
+      "no-case-declarations": "off",
+      "react/jsx-pascal-case": "off"
+    }
+  }
